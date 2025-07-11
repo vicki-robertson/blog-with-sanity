@@ -20,7 +20,7 @@ const Posts = ({ posts = [] }: { posts: SanityDocument[] }) => {
           <Link
             key={post._id}
             href={`/${post.slug.current}`}
-            className="group rounded-xl outline-none focus-visible:outline focus-visible:outline-2 focus-visible:outline-black"
+            className="group rounded-xl outline-none  focus-visible:outline-2 focus-visible:outline-cyan-800"
             aria-label={`Read more about ${post.title}`}
           >
             <div className="rounded-xl overflow-hidden shadow-lg hover:shadow-2xl focus-within:shadow-2xl transition-shadow duration-300 bg-white border border-transparent hover:border-gray-300 focus-within:border-gray-400">

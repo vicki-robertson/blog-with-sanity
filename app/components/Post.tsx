@@ -10,8 +10,8 @@ const builder = ImageUrlBuilder(client);
 
 const Post = ({ post }: { post: SanityDocument }) => {
   return (
-    <main className="container mx-auto prose prose-lg">
-      <h1>{post.title}</h1>
+    <main className="container pt-8 mx-auto prose prose-lg">
+      <h1 className="font-medium text-4xl">{post.title}</h1>
       <p>{post.description}</p>
       {post?.mainImage ? (
         <Image
