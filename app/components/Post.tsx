@@ -10,7 +10,7 @@ const builder = ImageUrlBuilder(client);
 
 const Post = ({ post }: { post: SanityDocument }) => {
   return (
-    <main>
+    <main className="container mx-auto prose prose-lg">
       <h1>{post.title}</h1>
       {post?.mainImage ? (
         <Image
