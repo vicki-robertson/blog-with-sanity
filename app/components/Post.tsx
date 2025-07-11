@@ -12,6 +12,7 @@ const Post = ({ post }: { post: SanityDocument }) => {
   return (
     <main className="container mx-auto prose prose-lg">
       <h1>{post.title}</h1>
+      <p>{post.description}</p>
       {post?.mainImage ? (
         <Image
           src={builder.image(post.mainImage).width(600).height(600).url()}
